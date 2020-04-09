@@ -5,3 +5,40 @@
   padding: 40px 32px 32px;
   margin: 0;
 }
+
+.description__img {
+  height: 390px;
+  background-size: 280px auto, 320px auto, auto;
+  // background-color: grey;
+  background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: center, bottom, center;
+  background-repeat: no-repeat;
+}
+
+.description__text {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .description__img {
+  height: 518px;
+  background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+  background-size: 460px auto, contain, auto;
+  }
+
+  .description__main {
+  padding: 52px 164px 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__img {
+  height: 458px;
+  background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+  background-size: 460px auto, 1200px auto, auto;
+  }
+
+  .description__main {
+  padding: 52px 382px 36px;
+  }
+}
