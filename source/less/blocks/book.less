@@ -1,6 +1,7 @@
 .book__form {
   padding-top: 32px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .book__title {
@@ -13,11 +14,27 @@
 .book__action {
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 40px;
-  padding-top: 30px;
+  padding: 30px 20px 40px;
   margin: 0;
 }
 
 .book__write {
   .book__title;
+}
+
+@media (min-width: @tablet-width) {
+  .book__title {
+    font-size: 30px;
+  }
+
+  .book__action {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .book__action {
+    padding-right: 370px;
+    padding-left: 370px;
+  }
 }

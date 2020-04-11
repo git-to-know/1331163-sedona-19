@@ -19,18 +19,24 @@
 
 .advantage__description {
   background-color: @blue;
-  padding-top: 37px;
-  padding-bottom: 44px;
+  padding: 37px 20px 44px;
+  box-sizing: border-box;
 
   &--road,
   &--area,
   &--tourists {
     background-color: @lightgrey;
+    color: black;
   }
 
   &--road,
   &--tourists {
     padding-top: 0;
+  }
+
+  &--city,
+  &--bridge {
+    color: @white;
   }
 }
 
@@ -39,20 +45,31 @@
   margin-bottom: 38px;
 }
 
-.advantage__item--city {
-  background-image: url("../img/bg-triangle.svg");
+.advantage__description--city {
+  background-image: url("../../img/bg-triangle.svg");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
 }
 
 .advantage__img {
-  background-image: url("../img/main-city-mobile@1x.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 260px;
+  width: 320px;
 }
 
+.advantage__img--city {
+  background-image: url(../../img/main-city-mobile@1x.jpg);
+}
+
+.advantage__img--bridge {
+  background-image: url(../../img/main-bridge-mobile@1x.jpg);
+}
+
+.advantage__wraper-bottom {
+  padding: 0;
+}
 
 @media (min-width: @tablet-width) {
   .advantage__title {
@@ -61,44 +78,66 @@
 
   .advantage__wraper {
     display: flex;
+    align-content: stretch;
+    height: 256px;
   }
 
   .advantage__item--city {
     background-image: none;
   }
 
+  .advantage__description {
+    flex-basis: 256px;
+    padding: 45px 45px 47px 45px;
+  }
+
   .advantage__description--city {
-    width: 256px;
+    background-image: none;
+  }
+
+  .advantage__description {
+    &--road,
+    &--area,
+    &--tourists {
+      padding: 49px 40px 50px;
+    }
+  }
+
+  .advantage__description--area {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .advantage__point {
     display: flex;
     justify-content: space-between;
+    padding: 61px 46px 48px 50px;
+  }
+
+  .advantage__img--city {
+    background-image: url(../../img/main-city-tablet@1x.jpg);
+  }
+
+  .advantage__img--bridge {
+    background-image: url(../../img/main-bridge-tablet@1x.jpg);
   }
 
   .advantage__img {
-    background-image: url("../../img/main-city-tablet@1x.jpg");
     height: 256px;
-    width: 512px;
+    flex-basis: 512px;
     background-origin: content-box;
-  }
-
-  .advantage__description {
-    padding: 45px 46px 47px 47px;
   }
 
   .advantage-text__title {
     font-size: 21px;
   }
 
-  .advantage__point {
-    padding: 61px 46px 48px 50px;
-  }
-
   .advantage__point-list {
     margin: 0;
     text-align: center;
-    width: 165px;
+    flex-basis: 165px;
+    padding-top: 107px;
+    box-sizing: border-box;
   }
 
   .advantage__point-list--souvenir {
@@ -106,10 +145,51 @@
   }
 
   .advantage__point-list--food {
-    padding: 0 10px;
+    padding: 107px 5px 0;
+  }
+
+  .advantage__wraper--bridge {
+    flex-direction: row-reverse;
+  }
+
+  .advantage__wraper-bottom {
+    display: flex;
+    padding: 0;
   }
 }
 
-
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .advantage__img--city {
+    background-image: url("../../img/main-city-desktop@1x.jpg");
   }
+
+  .advantage__img--bridge {
+    background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+    background-position: center;
+    background-size: 800px auto;
+  }
+
+  .advantage__description {
+    flex-basis: 400px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .advantage__img {
+    flex-basis: 800px;
+  }
+
+  .advantage__point {
+    padding: 57px 90px 87px 72px;
+  }
+
+  .advantage__point-list {
+    flex-basis: 300px;
+  }
+
+
+  .advantage__wraper-bottom {
+    background-color: @lightgrey;
+    padding: 0 29px 10px 30px;
+  }
+}

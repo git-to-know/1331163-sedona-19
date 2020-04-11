@@ -7,6 +7,16 @@
   font-weight: bold;
 }
 
+.site-list__item--logo {
+  height: 56px;
+  // background-color: @white;
+  background-image: url(../../img/logo-sedona-mobile.svg);
+  background-size: 102px 85px;
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+
 .site-list__item a {
   color: @white;
 }
@@ -29,5 +39,20 @@
 
   .site-list__item:nth-child(4) {
     order: 1;
+  }
+
+  .site-list__item--logo {
+    height: 56px;
+    background-image: url(../../img/logo-sedona-tablet.svg);
+    background-size: 102px 83px;
+  }
+
+
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item--logo {
+    background-image: url(../../img/logo-sedona-desktop.svg);
+    background-size: 188px 96px;
   }
 }

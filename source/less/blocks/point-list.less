@@ -12,3 +12,27 @@
   line-height: 21px;
   margin: 0;
 }
+
+.point-list__text {
+  &--house,
+  &--food {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .point-list__text {
+    &--house,
+    &--food {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .point-list__text--souvenir {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
