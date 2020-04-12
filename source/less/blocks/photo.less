@@ -4,6 +4,7 @@
   font-weight: bold;
   margin: 0;
   padding-bottom: 36px;
+  text-align: center;
 }
 
 .photo {
@@ -14,10 +15,46 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .photo__list {
   padding: 0;
   padding-top: 57px;
   margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title {
+    font-size: 30px;
+  }
+
+  .photo__title-description {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__title-description {
+    padding-right: 370px;
+    padding-left: 370px;
+  }
+
+  .photo {
+    margin: 111px 0 0;
+  }
 }

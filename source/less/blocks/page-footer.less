@@ -8,3 +8,23 @@
   font-weight: bold;
   padding-bottom: 42px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 60px;
+    align-items: center;
+  }
+
+  .page-footer__hashtag {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}

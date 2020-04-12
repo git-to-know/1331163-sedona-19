@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Sedona</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
@@ -27,22 +28,19 @@
           <li class="site-list__item">
             <a href="#">HTML Academy</a>
           </li>
+          <li class="main-nav__logo site-list__item site-list__item--logo">
+            <a class="main-nav__logo-image"></a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </li>
         </ul>
       </nav>
 
-      <nav class="main-header">
-        <a href="index.html"><img class="main-header__logo-image" src="img/logo-sedona-tablet.svg" width="102" height="83" alt="Логотип Седона"></a>
-        <button class="main-header__toggle" type="button">Открыть меню</button>
-      </nav>
     </header>
 
     <main class="page-main">
 
       <section class="description">
-        <div class="description__img index-image">
-          <img class="index-image_main" src="img/bg-back-mobile@1x.jpg" width="" height="" alt="Горы Седоны">
-          <img class="index-image_text" src="img/text-sedona.svg" width="229" height="39" alt="Текст описание">
-          <img class="index-image_triangle" src="img/bg-intro-triangle-mobile.svg" width="320" height="30" alt="Обрамление картинки">
+        <div class="description__img-photo">
         </div>
       </section>
 
@@ -51,28 +49,52 @@
         <p class="photo__title-description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
         <ul class="photo__list">
           <li class="photo__view photo-view">
-            <a href="#"><img class="photo-view__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат"></a>
-            <p class="photo-view__title">Неродные просторы</p>
-            <p class="photo-view__autor">Автор фото: Борис</p>
-            <p class="photo-view__like">1350</p>
+            <div class="photo-view__img photo-view__img--sunset">
+              <a  href="#"  aria-label="Закат Седоны"></a>
+            </div>
+            <div class="photo-view__caption">
+              <div class="photo-view__caption-autor">
+                <p class="photo-view__title">Неродные просторы</p>
+                <p class="photo-view__autor">Автор фото: Борис</p>
+              </div>
+              <div class="photo-view__like">1350</div>
+            </div>
           </li>
           <li class="photo__view photo-view">
-            <a href="#"><img class="photo-view__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность Седоны"></a>
-            <p class="photo-view__title">Местная растительность</p>
-            <p class="photo-view__autor">Автор фото: Сергей</p>
-            <p class="photo-view__like">143</p>
+            <div class="photo-view__img photo-view__img--flora">
+              <a href="#" aria-label="Растительность Седоны"></a>
+            </div>
+            <div class="photo-view__caption">
+              <div class="photo-view__caption-autor">
+                <p class="photo-view__title">Местная растительность</p>
+                <p class="photo-view__autor">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-view__like">143</div>
+            </div>
           </li>
           <li class="photo__view photo-view">
-            <a href="#"><img class="photo-view__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога Седоны"></a>
-            <p class="photo-view__title">Дорога на север</p>
-            <p class="photo-view__autor">Автор фото: Петр</p>
-            <p class="photo-view__like">96</p>
+            <div class="photo-view__img photo-view__img--road">
+              <a href="#" aria-label="Дорога Седоны"></a>
+            </div>
+            <div class="photo-view__caption">
+              <div class="photo-view__caption-autor">
+                <p class="photo-view__title">Дорога на север</p>
+                <p class="photo-view__autor">Автор фото: Петр</p>
+              </div>
+              <div class="photo-view__like">96</div>
+            </div>
           </li>
           <li class="photo__view photo-view">
-            <a href="#"><img class="photo-view__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
-            <p class="photo-view__title">Мост Дьявола</p>
-            <p class="photo-view__autor">Автор фото: Антон</p>
-            <p class="photo-view__like">254</p>
+            <div class="photo-view__img photo-view__img--bridge">
+              <a href="#"  aria-label="Мост Дьявола"></a>
+            </div>
+            <div class="photo-view__caption">
+              <div class="photo-view__caption-autor">
+                <p class="photo-view__title">Мост Дьявола</p>
+                <p class="photo-view__autor">Автор фото: Антон</p>
+              </div>
+              <div class="photo-view__like">254</div>
+            </div>
           </li>
         </ul>
 
