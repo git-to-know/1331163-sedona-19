@@ -1,5 +1,7 @@
 .main-nav {
   background-color: @blue;
+  width: auto;
+  position: relative;
 }
 
 .main-nav__logo {
@@ -9,6 +11,88 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+
+  display: block;
+  width: 23px;
+  height: 21px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav__toggle--open {
+  bottom: 30px;
+  right: 52px;
+  left: auto;
+  background-color: @white;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 4px;
+
+    background-color: @blue;
+    box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+  }
+
+  &:hover::before {
+    background-color: #b3d1e4;
+    box-shadow: 0 8px 0 0 #b3d1e4, 0 16px 0 0  #b3d1e4;
+  }
+
+  &:active::before {
+    background-color: #d9e8f1;
+    box-shadow: 0 8px 0 0 #d9e8f1, 0 16px 0 0  #d9e8f1;
+  }
+}
+
+.main-nav__toggle--close {
+  top: 16px;
+  right: 55px;
+  left: auto;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: -3px;
+
+    width: 30px;
+    height: 4px;
+
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #cde1ed;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #a7cae0;
+  }
 }
 
 @media (min-width: @tablet-width) {
