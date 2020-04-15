@@ -14,11 +14,13 @@
 
 .advantage__point {
   padding-left: 68px;
+  margin: auto;
+  max-width: 450px;
 }
 
 .advantage__description {
   background-color: @blue;
-  padding: 37px 20px 44px;
+  padding: 45px 20px 44px;
   box-sizing: border-box;
 
   &--road,
@@ -29,8 +31,8 @@
   }
 
   &--road,
-  &--tourists {
-    padding-top: 0;
+  &--area {
+    border-bottom: 1px solid #d6d6d6;
   }
 
   &--city,
@@ -49,6 +51,7 @@
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
+  padding-top: 106px;
 }
 
 .advantage__img {
@@ -70,6 +73,10 @@
   padding: 0;
 }
 
+.advantage__wraper-bottom--item {
+  padding-left: 0;
+}
+
 @media (min-width: @tablet-width) {
   .advantage__title {
     padding: 0 130px 55px;
@@ -86,13 +93,18 @@
   }
 
   .advantage__description {
-    flex-basis: 256px;
+    flex-basis: 33%;
     padding: 45px 45px 47px 45px;
 
     &--road,
     &--area,
     &--tourists {
       padding: 49px 40px 50px;
+    }
+
+    &--road,
+    &--area {
+      border: none;
     }
   }
 
@@ -109,6 +121,7 @@
     display: flex;
     justify-content: space-between;
     padding: 61px 46px 48px 50px;
+    max-width: 100%;
   }
 
   .advantage__img--city {
@@ -121,7 +134,7 @@
 
   .advantage__img {
     height: 256px;
-    flex-basis: 512px;
+    flex-basis: 77%;
     background-origin: content-box;
   }
 
@@ -150,8 +163,13 @@
   }
 
   .advantage__wraper-bottom {
-    display: flex;
     padding: 0;
+    background-color: @lightgrey;
+  }
+
+  .advantage__wraper-bottom--item {
+    display: flex;
+    margin: auto;
   }
 }
 
@@ -161,19 +179,13 @@
   }
 
   .advantage__img--bridge {
-    background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+    background-image: url("../../img/main-bridge-desktop@1x.jpg");
     background-position: center;
-    background-size: 800px auto;
   }
 
   .advantage__description {
-    flex-basis: 400px;
     padding-top: 55px;
     padding-bottom: 60px;
-  }
-
-  .advantage__img {
-    flex-basis: 800px;
   }
 
   .advantage__point {
@@ -184,9 +196,7 @@
     flex-basis: 300px;
   }
 
-
   .advantage__wraper-bottom {
-    background-color: @lightgrey;
     padding: 0 29px 10px 30px;
   }
 }
