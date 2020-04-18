@@ -24,37 +24,29 @@
   margin: 0;
   padding-bottom: 22px;
   padding-left: 37px;
+  position: relative;
 }
 
 .photo-view__img {
-  height: 280px;
-  width: 280px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: auto;
+  min-width: 280px;
 }
 
-.photo-view__img--sunset {
-  background-image: url("../../img/photo-sunset-mobile@1x.jpg");
-}
+.photo-view__like-icon {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: auto;
 
-.photo-view__img--flora {
-  background-image: url("../../img/photo-cactus-mobile@1x.jpg");
-}
-
-.photo-view__img--road {
-  background-image: url("./../img/photo-roads-mobile@1x.jpg");
-}
-
-.photo-view__img--bridge {
-  background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+  path {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photo-view__img--sunset {
-    height: 400px;
-    width: 648px;
-    background-image: url("../../img/photo-sunset-tablet@1x.jpg");
+    height: auto;
+    min-width: 648px;
   }
 
   .photo-view__caption {
@@ -77,52 +69,28 @@
     padding-bottom: 0;
   }
 
-  .photo-view__img--flora {
-    background-image: url("../../img/photo-cactus-tablet@1x.jpg");
-  }
-
-  .photo-view__img--road {
-    background-image: url("../../img/photo-roads-tablet@1x.jpg");
-  }
-
-  .photo-view__img--bridge {
-    background-image: url("../../img/photo-bridge-tablet@1x.jpg");
-  }
-
   .photo-view__img {
     &--flora,
     &--road,
     &--bridge {
-      width: 324px;
-      height: 267px;
+      min-width: 324px;
+      height: auto;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-view__img--sunset {
-    height: 400px;
-    width: 1200px;
-    background-image: url("../../img/photo-sunset-desktop@1x.jpg");
-  }
-
-  .photo-view__img--flora {
-    background-image: url("../../img/photo-cactus-desktop@1x.jpg");
-  }
-
-  .photo-view__img--road {
-    background-image: url("../../img/photo-roads-desktop@1x.jpg");
-  }
-
-  .photo-view__img--bridge {
-    background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+    height: auto;
+    min-width: 1200px;
   }
 
   .photo-view__img {
     &--flora,
     &--road,
     &--bridge {
-      width: 400px;
+      min-width: 400px;
+      height: auto;
     }
   }
 
@@ -131,5 +99,11 @@
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: -80px;
     padding: 16px 20px;
+  }
+
+  .photo-view__like-icon {
+    path {
+      fill: #ffffff;
+    }
   }
 }
