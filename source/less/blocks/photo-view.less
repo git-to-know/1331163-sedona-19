@@ -30,6 +30,13 @@
 .photo-view__img {
   height: auto;
   min-width: 280px;
+
+  &--sunset,
+  &--flora,
+  &--road,
+  &--bridge {
+    display: block;
+  }
 }
 
 .photo-view__like-icon {
@@ -80,6 +87,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .photo-view {
+    position: relative;
+  }
+
   .photo-view__img--sunset {
     height: auto;
     min-width: 1200px;
@@ -99,6 +110,9 @@
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: -80px;
     padding: 16px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   .photo-view__like-icon {

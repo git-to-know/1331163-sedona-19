@@ -48,7 +48,7 @@
 }
 
 .advantage__description--city {
-  background-image: url("../../img/bg-triangle.svg");
+  background-image: url("img/bg-triangle.svg");
   background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -58,8 +58,17 @@
 .advantage__img {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 260px;
-  width: 320px;
+  height: 256px;
+  // flex-basis: 66%;
+  // flex-grow: 2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.advantage__description .advantage-text {
+  flex-basis: 33%;
+  flex-grow: 1;
 }
 
 .advantage__wraper-bottom {
@@ -80,7 +89,7 @@
   .advantage__wraper {
     display: flex;
     align-content: stretch;
-    height: 256px;
+    // height: 256px;
   }
 
   .advantage__item--city {
@@ -88,7 +97,9 @@
   }
 
   .advantage__description {
+    flex-grow: 1;
     flex-basis: 33%;
+    padding-bottom: 41px;
 
     &--road,
     &--area,
@@ -121,7 +132,8 @@
 
   .advantage__img {
     height: 256px;
-    flex-basis: 68%;
+    flex-grow: 2;
+    flex-basis: 66%;
   }
 
   .advantage-text__title {
@@ -162,7 +174,7 @@
 @media (min-width: @desktop-width) {
   .advantage__description {
     padding-top: 55px;
-    padding-bottom: 60px;
+    padding-bottom: 53px;
   }
 
   .advantage__point {
@@ -177,7 +189,7 @@
     padding: 0 29px 10px 30px;
   }
 
-  .advantage__img--city {
-    height: 256px;
-  }
+  // .advantage__img--city {
+  //   height: 256px;
+  // }
 }
