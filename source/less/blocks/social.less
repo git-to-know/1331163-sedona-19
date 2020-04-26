@@ -10,14 +10,70 @@
   width: 46px;
   height: 48px;
   background-color: @blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
-  color: @white;
+  position: relative;
+
+  &--twitter-icon,
+  &--facebook-icon,
+  &--youtube-icon {
+    position: absolute;
+    top: 16px;
+    left: -10px;
+    right: auto;
+    width: 37px;
+    height: 37px;
+  }
+
+  path {
+    fill: @white;
+  }
+
+  &--twitter-icon {
+    width: 21px;
+    height: 16px;
+  }
+
+  &--facebook-icon {
+    width: 11px;
+    height: 20px;
+    top: 13px;
+    left: -6px;
+  }
+
+  &--youtube-icon {
+    width: 21px;
+    height: 14px;
+  }
+
+  &--twitter-icon:active,
+  &--facebook-icon:active,
+  &--youtube-icon:active {
+    path {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .social__list {
     padding-bottom: 0;
+  }
+
+  .social__item {
+    margin-right: 6px;
+  }
+
+  .social__item:last-child {
+    margin-right: 0;
   }
 }

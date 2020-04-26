@@ -16,6 +16,7 @@
   margin: 0;
   padding-top: 15px;
   padding-bottom: 24px;
+  position: relative;
 }
 
 .advantage-text__intro {
@@ -35,30 +36,31 @@
     padding-top: 0;
     padding-right: 17px;
     padding-left: 16px;
-  }
 
-  .advantage-text__title--city {
-    padding-top: 0;
-  }
+    &--city {
+      padding-top: 0;
+    }
 
-  .advantage-text__title--tourists {
-    padding-left: 25px;
-    padding-right: 25px;
+    &--tourists {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &--bridge {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
   }
 
   .advantage-text__intro {
     padding-left: 0;
     padding-right: 0;
-  }
 
-  .advantage-text__intro--area {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .advantage-text__intro--road {
-    padding-left: 15px;
-    padding-right: 15px;
+    &--road,
+    &--bridge {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 
@@ -66,25 +68,23 @@
   .advantage-text__title {
     padding-right: 100px;
     padding-left: 100px;
+
+    &--road {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
   }
 
-  .advantage-text__title--bridge {
-    padding-left: 88px;
-    padding-right: 88px;
-  }
+  .advantage-text__intro {
+    &--city,
+    &--road {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
 
-  .advantage-text__intro--road {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-
-  .advantage-text__intro--city {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .advantage-text__intro--bridge {
-    padding-right: 40px;
-    padding-left: 40px;
+    &--bridge {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 }

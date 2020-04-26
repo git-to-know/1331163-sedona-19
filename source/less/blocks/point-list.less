@@ -3,6 +3,25 @@
   line-height: 26px;
   font-weight: bold;
   margin: 0;
+  position: relative;
+
+  &--house-icon,
+  &--souvenir-icon,
+  &--food-icon {
+    position: absolute;
+    top: -10px;
+    left: -49px;
+    right: auto;
+    width: 37px;
+    height: 37px;
+  }
+
+  path,
+  rect,
+  polygon,
+  circle {
+    fill: @blue;
+  }
 }
 
 .point-list__text {
@@ -18,6 +37,10 @@
   }
 }
 
+.point-list__break {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .point-list__text {
     &--house,
@@ -26,11 +49,36 @@
       padding-right: 0;
     }
   }
+
+  .point-list__title {
+    &--house-icon,
+    &--souvenir-icon,
+    &--food-icon {
+      position: absolute;
+      top: -102px;
+      left: 42px;
+      right: auto;
+      width: 76px;
+      height: 74px;
+    }
+  }
+
+  .point-list__break {
+    display: inline;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .point-list__text--souvenir {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .point-list__title {
+    &--house-icon,
+    &--souvenir-icon,
+    &--food-icon {
+      left: 109px;
+    }
   }
 }

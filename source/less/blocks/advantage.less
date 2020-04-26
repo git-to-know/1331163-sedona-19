@@ -22,6 +22,7 @@
   background-color: @blue;
   padding: 45px 20px 44px;
   box-sizing: border-box;
+  position: relative;
 
   &--road,
   &--area,
@@ -47,8 +48,8 @@
 }
 
 .advantage__description--city {
-  background-image: url("../../img/bg-triangle.svg");
-  background-size: contain;
+  background-image: url("img/bg-triangle.svg");
+  background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 106px;
@@ -57,24 +58,27 @@
 .advantage__img {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 260px;
-  width: 320px;
+  height: 256px;
+  // flex-basis: 66%;
+  // flex-grow: 2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-.advantage__img--city {
-  background-image: url("../../img/main-city-mobile@1x.jpg");
-}
-
-.advantage__img--bridge {
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+.advantage__description .advantage-text {
+  flex-basis: 33%;
+  flex-grow: 1;
 }
 
 .advantage__wraper-bottom {
   padding: 0;
+  background-color: @lightgrey;
 }
 
 .advantage__wraper-bottom--item {
-  padding-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -85,7 +89,7 @@
   .advantage__wraper {
     display: flex;
     align-content: stretch;
-    height: 256px;
+    // height: 256px;
   }
 
   .advantage__item--city {
@@ -93,8 +97,9 @@
   }
 
   .advantage__description {
+    flex-grow: 1;
     flex-basis: 33%;
-    padding: 45px 45px 47px 45px;
+    padding-bottom: 41px;
 
     &--road,
     &--area,
@@ -106,10 +111,11 @@
     &--area {
       border: none;
     }
-  }
 
-  .advantage__description--city {
-    background-image: none;
+    &--city {
+      padding: 45px 38px 0;
+      background-image: none;
+    }
   }
 
   .advantage__description--area {
@@ -124,18 +130,10 @@
     max-width: 100%;
   }
 
-  .advantage__img--city {
-    background-image: url("../../img/main-city-tablet@1x.jpg");
-  }
-
-  .advantage__img--bridge {
-    background-image: url("../../img/main-bridge-tablet@1x.jpg");
-  }
-
   .advantage__img {
     height: 256px;
-    flex-basis: 77%;
-    background-origin: content-box;
+    flex-grow: 2;
+    flex-basis: 66%;
   }
 
   .advantage-text__title {
@@ -174,18 +172,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantage__img--city {
-    background-image: url("../../img/main-city-desktop@1x.jpg");
-  }
-
-  .advantage__img--bridge {
-    background-image: url("../../img/main-bridge-desktop@1x.jpg");
-    background-position: center;
-  }
-
   .advantage__description {
     padding-top: 55px;
-    padding-bottom: 60px;
+    padding-bottom: 53px;
   }
 
   .advantage__point {
@@ -199,4 +188,8 @@
   .advantage__wraper-bottom {
     padding: 0 29px 10px 30px;
   }
+
+  // .advantage__img--city {
+  //   height: 256px;
+  // }
 }

@@ -1,4 +1,49 @@
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
+  padding-right: 20px;
+}
+
+.copyright__link {
+  position: relative;
+}
+
+.copyright__html-icon {
+  // position: absolute;
+  // top: -6px;
+  // left: auto;
+  // right: -13px;
+  width: 27px;
+  height: 36px;
+
+  path {
+    fill: black;
+  }
+
+  &:hover {
+    path {
+      fill: @blue;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #b2b2b2;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    padding-right: 0;
+  }
+
+  .copyright__html-icon {
+    left: 4px;
+  }
 }

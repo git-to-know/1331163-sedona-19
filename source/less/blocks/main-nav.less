@@ -26,7 +26,7 @@
 
 .main-nav__toggle--open {
   bottom: 30px;
-  right: 52px;
+  right: 34px;
   left: auto;
   background-color: @white;
 
@@ -56,8 +56,8 @@
 }
 
 .main-nav__toggle--close {
-  top: 16px;
-  right: 55px;
+  top: 22px;
+  right: 19px;
   left: auto;
   background-color: transparent;
 
@@ -95,6 +95,10 @@
   }
 }
 
+.main-nav__logo-image img {
+  z-index: 20;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__list {
     background-color: @white;
@@ -102,10 +106,16 @@
     padding-right: 27px;
     padding-left: 50px;
     justify-content: space-around;
-    padding-top: 22px;
   }
 
   .main-nav button {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-image img {
+    width: 188px;
+    height: auto;
   }
 }
