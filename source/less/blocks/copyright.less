@@ -1,48 +1,30 @@
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
-  padding-right: 20px;
-}
-
-.copyright__link {
-  position: relative;
+  padding-right: 12px;
 }
 
 .copyright__html-icon {
-  position: absolute;
-  top: -6px;
-  left: auto;
-  right: -13px;
-  width: 27px;
-  height: 36px;
 
-  path {
-    fill: black;
-  }
+  fill: #000000;
 
   &:hover {
-    path {
-      fill: @blue;
-    }
+    fill: @blue;
   }
 
   &:active {
-    path {
-      fill: #b2b2b2;
-    }
+    fill: #b2b2b2;
   }
 }
 
 .copyright {
   display: flex;
   align-items: center;
+  padding-right: 11px;
+  padding-left: 11px;
 }
 
 @media (min-width: @tablet-width) {
-  .copyright__text {
-    padding-right: 0;
-  }
-
   .copyright__html-icon {
     left: 4px;
   }
