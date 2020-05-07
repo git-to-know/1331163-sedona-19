@@ -36,7 +36,14 @@
   &--road,
   &--bridge {
     display: block;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+}
+
+.photo-view__caption {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .photo-view__like-icon {
@@ -60,6 +67,8 @@
     justify-content: space-between;
     padding: 22px 20px;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .photo-view__title {
@@ -80,6 +89,14 @@
     &--bridge {
       min-width: 324px;
       height: auto;
+    }
+
+    &--sunset,
+    &--flora,
+    &--road,
+    &--bridge {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -114,8 +131,6 @@
   }
 
   .photo-view__like-icon {
-    path {
-      fill: #ffffff;
-    }
+    fill: #ffffff;
   }
 }
