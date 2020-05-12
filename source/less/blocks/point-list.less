@@ -6,18 +6,34 @@
   position: relative;
   fill: @blue;
 
-  &--house-icon,
-  &--souvenir-icon,
+  &--house-icon {
+    position: absolute;
+    top: -5px;
+    left: -47px;
+    right: auto;
+  }
+
+  &--souvenir-icon {
+    position: absolute;
+    top: -11px;
+    left: -47px;
+    right: auto;
+  }
+
   &--food-icon {
     position: absolute;
-    top: -10px;
-    left: -49px;
+    top: -6px;
+    left: -50px;
     right: auto;
+  }
+
+  &--house {
+    padding-top: 4px;
   }
 }
 
 .point-list__text {
-  padding-top: 25px;
+  padding-top: 13px;
   font-weight: 400px;
   font-size: 14px;
   line-height: 21px;
@@ -35,6 +51,8 @@
 
 @media (min-width: @tablet-width) {
   .point-list__text {
+    padding-top: 20px;
+
     &--house,
     &--food {
       padding-left: 0;
@@ -43,6 +61,8 @@
   }
 
   .point-list__title {
+    font-size: 21px;
+
     &--house-icon,
     &--souvenir-icon,
     &--food-icon {
@@ -52,6 +72,10 @@
       right: auto;
       width: 76px;
       height: 74px;
+    }
+
+    &--house {
+      padding-top: 0;
     }
   }
 

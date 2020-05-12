@@ -14,8 +14,31 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+  }
+
+  &:active a {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--main {
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+
+  &--photo {
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+
+  &--form {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  &--html {
+    padding-top: 8px;
+    padding-bottom: 5px;
   }
 }
 
@@ -46,6 +69,19 @@
     line-height: 26px;
     margin: 0;
     border: none;
+    padding-top: 16px;
+    flex-basis: 20%;
+
+    &--logo {
+      padding-top: 0;
+    }
+
+    &--main,
+    &--photo,
+    &--form,
+    &--html {
+      padding-bottom: 5px;
+    }
 
     &:hover {
       background-color: @white;

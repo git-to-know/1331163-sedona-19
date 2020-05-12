@@ -25,8 +25,8 @@
 }
 
 .main-nav__toggle--open {
-  bottom: 30px;
-  right: 34px;
+  bottom: 18px;
+  right: 20px;
   left: auto;
   background-color: @white;
 
@@ -56,8 +56,9 @@
 }
 
 .main-nav__toggle--close {
-  top: 22px;
-  right: 19px;
+  display: none;
+  top: 14px;
+  right: 21px;
   left: auto;
   background-color: transparent;
 
@@ -103,9 +104,7 @@
   .main-nav__list {
     background-color: @white;
     display: flex;
-    padding-right: 27px;
-    padding-left: 50px;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .main-nav button {
@@ -117,5 +116,10 @@
   .main-nav__logo-image img {
     width: 188px;
     height: auto;
+  }
+
+  .main-nav__list {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -5,7 +5,6 @@
     <title>HTML Academy: Sedona</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
     <script src="js/picturefill.js"></script>
 
   </head>
@@ -18,20 +17,20 @@
         <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
 
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--main">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="site-list__item site-list__item--photo">
+            <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--form">
             <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--html">
             <a href="#">HTML Academy</a>
           </li>
           <li class="main-nav__logo site-list__item site-list__item--logo">
-            <a class="main-nav__logo-image">
+            <a href="index.html" class="main-nav__logo-image">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -67,16 +66,16 @@
 
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img class="photo-view__img--sunset" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" min-width="280" height="auto" alt="Закат Седоны">
+                <img class="photo-view__img--sunset" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" alt="Закат Седоны">
               </picture>
             </a>
 
-            <div class="photo-view__caption">
-              <div class="photo-view__caption-autor">
+            <div class="photo-view__caption ">
+              <div class="photo-view__caption-autor photo-view__caption-autor--first-child">
                 <p class="photo-view__title">Неродные просторы</p>
                 <p class="photo-view__autor">Автор фото: Борис</p>
               </div>
-              <div class="photo-view__like">
+              <div class="photo-view__like photo-view__like--first-child">
                 <svg class="photo-view__like-icon" width="23" height="21"><use xlink:href="img/sprite.svg#icon-like" aria-label="Палец вверх"></use></svg>
               1350</div>
             </div>

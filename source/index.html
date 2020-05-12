@@ -6,7 +6,6 @@
   <title>HTML Academy: Sedona</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
   <script src="js/picturefill.js"></script>
 </head>
 
@@ -17,16 +16,16 @@
       <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
 
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--main">
           <a href="#">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--photo">
           <a href="photo.html">Фото и видео</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--form">
           <a href="form.html">Форма отзыва</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--html">
           <a href="#">HTML Academy</a>
         </li>
         <li class="main-nav__logo site-list__item site-list__item--logo">
@@ -58,7 +57,7 @@
     </section>
 
     <section class="advantage">
-      <h2 class="advantage__title">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</h2>
+      <h2 class="advantage__title">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</h2>
       <ul class="advantage__list">
         <li class="advantage__item advantage__item--city">
           <div class="advantage__wraper">
@@ -90,7 +89,7 @@
               <h3 class="point-list__title point-list__title--souvenir">
                 <svg class="point-list__title--souvenir-icon" width="37" height="37"><use xlink:href="img/sprite.svg#icon-souvenir" aria-label="Иконка подарок"></use></svg>
               Сувениры</h3>
-              <p class="point-list__text point-list__text--souvenir">Не только китайского,<span class="point-list__break"><br></span> но и местного производства!</p>
+              <p class="point-list__text point-list__text--souvenir">Не только китайского, <span class="point-list__break"><br></span> но и местного производства!</p>
             </li>
             <li class="advantage__point-list advantage__point-list--food point-list">
               <h3 class="point-list__title point-list__title--food">
@@ -99,11 +98,12 @@
               <p class="point-list__text point-list__text--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
+
         </li>
         <li class="advantage__item advantage__item--bridge">
           <div class="advantage__wraper advantage__wraper--bridge">
             <header class="advantage__description advantage__description--bridge advantage-text">
-              <p class="advantage-text__title advantage-text__title--bridge">Там есть мост дьявола</p>
+              <p class="advantage-text__title advantage-text__title--bridge">Там есть <br class="advantage__break">мост дьявола</p>
               <p class="advantage-text__number">— №2 —</p>
               <p class="advantage-text__intro advantage-text__intro--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </header>
@@ -123,21 +123,21 @@
         <li >
           <div class="advantage__wraper-bottom">
             <ul class="advantage__wraper-bottom--item">
-              <li class="advantage__item">
+              <li class="advantage__item advantage__item--area">
                 <header class="advantage__description advantage__description--area advantage-text">
-                  <p class="advantage-text__title">Небольшая площадь</p>
+                  <p class="advantage-text__title advantage-text__title--area">Небольшая площадь</p>
                   <p class="advantage-text__number">— №3 —</p>
                   <p class="advantage-text__intro advantage-text__intro--area">ВСЕ интересные места находятся очень близко</p>
                 </header>
               </li>
-              <li class="advantage__item">
+              <li class="advantage__item advantage__item--road">
                 <header class="advantage__description advantage__description--road advantage-text">
-                  <p class="advantage-text__title">Красивая дорога</p>
+                  <p class="advantage-text__title advantage-text__title--road">Красивая дорога</p>
                   <p class="advantage-text__number">— №4 —</p>
                   <p class="advantage-text__intro advantage-text__intro--road">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
                 </header>
               </li>
-              <li class="advantage__item">
+              <li class="advantage__item advantage__item--tourists">
                 <header class="advantage__description advantage__description--tourists advantage-text">
                   <p class="advantage-text__title advantage-text__title--tourists">Мало туристов</p>
                   <p class="advantage-text__number">— №5 —</p>
@@ -152,14 +152,14 @@
 
     <section class="book">
       <div class="book__form">
-        <h3 class="book__title">Заитересовались?</h3>
+        <h3 class="book__title">Заинтересовались?</h3>
         <p class="book__action">Укажите предполагаемые даты поездки,<span class="book__break"><br></span> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="book__write button" href="#">Найти гостиницу</a>
       </div>
     </section>
 
     <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411320.942376212!2d-112.10368639910246!3d34.754761025169095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1588671570621!5m2!1sru!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411320.942376212!2d-112.10368639910246!3d34.754761025169095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1588671570621!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 
   </main>
@@ -188,7 +188,7 @@
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html Академия">
-        <svg class="copyright__html-icon" width="27" height="35"><use xlink:href="img/sprite.svg#icon-copyright" aria-label="Логотип HTML Academy"></use></svg>
+        <svg class="copyright__html-icon" width="27" height="40"><use xlink:href="img/sprite.svg#icon-copyright" aria-label="Логотип HTML Academy"></use></svg>
       </a>
     </div>
 

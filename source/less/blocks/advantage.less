@@ -4,7 +4,7 @@
   font-weight: 400;
   margin: 0;
   text-align: center;
-  padding: 0 32px 33px;
+  padding: 0 32px 5px 29px;
 }
 
 .advantage__list {
@@ -13,14 +13,15 @@
 }
 
 .advantage__point {
-  padding-left: 68px;
+  padding-left: 69px;
+  padding-bottom: 38px;
   margin: auto;
   max-width: 450px;
 }
 
 .advantage__description {
   background-color: @blue;
-  padding: 45px 20px 44px;
+  padding: 39px 20px 40px;
   box-sizing: border-box;
   position: relative;
 
@@ -29,6 +30,17 @@
   &--tourists {
     background-color: @lightgrey;
     color: black;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  &--area {
+    padding-top: 24px;
+  }
+
+  &--tourists {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   &--road,
@@ -43,24 +55,21 @@
 }
 
 .advantage__point-list {
-  margin-top: 38px;
-  margin-bottom: 38px;
+  margin-top: 29px;
 }
 
 .advantage__description--city {
-  background-image: url("img/bg-triangle.svg");
+  background-image: url("../img/bg-triangle.svg");
   background-size: 100%;
   background-position: top;
   background-repeat: no-repeat;
-  padding-top: 106px;
+  padding-top: 77px;
 }
 
 .advantage__img {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 256px;
-  // flex-basis: 66%;
-  // flex-grow: 2;
+  height: 262px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -81,9 +90,13 @@
   padding-right: 20px;
 }
 
+.advantage__break {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .advantage__title {
-    padding: 0 130px 55px;
+    padding: 0 130px 50px;
   }
 
   .advantage__wraper {
@@ -104,7 +117,7 @@
     &--road,
     &--area,
     &--tourists {
-      padding: 49px 40px 50px;
+      padding: 45px 25px 46px;
     }
 
     &--road,
@@ -116,28 +129,34 @@
       padding: 45px 38px 0;
       background-image: none;
     }
-  }
 
-  .advantage__description--area {
-    padding-left: 30px;
-    padding-right: 30px;
+    &--bridge {
+      padding-top: 44px;
+    }
+
+    &--area {
+      padding-left: 34px;
+      padding-right: 25px;
+    }
+
+    &--road {
+      padding-left: 48px;
+      padding-right: 28px;
+    }
   }
 
   .advantage__point {
     display: flex;
     justify-content: space-between;
-    padding: 61px 46px 48px 50px;
+    padding: 52px 46px 62px 45px;
     max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .advantage__img {
     height: 256px;
     flex-grow: 2;
     flex-basis: 66%;
-  }
-
-  .advantage-text__title {
-    font-size: 21px;
   }
 
   .advantage__point-list {
@@ -168,17 +187,34 @@
   .advantage__wraper-bottom--item {
     display: flex;
     margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantage__break {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantage__description {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 53px;
+
+    &--city {
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+
+    &--area,
+    &--road,
+    &--tourists {
+      padding: 45px 0 66px;
+    }
   }
 
   .advantage__point {
-    padding: 57px 90px 87px 72px;
+    padding: 52px 50px 82px;
   }
 
   .advantage__point-list {
@@ -186,10 +222,23 @@
   }
 
   .advantage__wraper-bottom {
-    padding: 0 29px 10px 30px;
+    padding: 0;
   }
 
-  // .advantage__img--city {
-  //   height: 256px;
-  // }
+  .advantage__wraper-bottom--item {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .advantage__item {
+    &--area,
+    &--road,
+    &--tourists {
+      padding-right: 0;
+      padding-left: 0;
+      flex-basis: 33%;
+      flex-grow: 1;
+    }
+  }
 }
