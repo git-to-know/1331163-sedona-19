@@ -116,8 +116,8 @@
   &::placeholder {
     padding-left: 21px;
     color: black;
+    opacity: 1;
     font-size: 18px;
-    line-height: 26px;
     font-weight: bold;
     align-items: center;
   }
@@ -155,7 +155,9 @@
   width: 58px;
   background-color: #e6e6e6;
   position: relative;
+}
 
+.form__contact-img {
   &--phone,
   &--email {
     position: absolute;
@@ -306,6 +308,12 @@
     font-size: 21px;
     line-height: 26px;
     padding-left: 0;
+
+    &--contact,
+    &--sight,
+    &--emotion {
+      margin: auto;
+    }
   }
 
   .form__filling {
