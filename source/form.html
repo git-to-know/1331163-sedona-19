@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js"></script>
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/svgxuse.js" defer></script>
   </head>
 
   <body>
@@ -66,15 +66,15 @@
 
             <div class="form__introduction form__introduction--introduction">
               <label for="user-name">Имя*:</label>
-              <input class="form__introduction-field form__field" id="user-name" type="text" name="name" placeholder="Петр" required>
+              <input class="form__introduction-field form__field form__field--name" id="user-name" type="text" name="name" placeholder="Петр" required>
             </div>
             <div class="form__introduction form__introduction--introduction">
               <label for="user-surname">Фамилия*:</label>
-              <input class="form__introduction-field form__field" id="user-surname" type="text" name="surname" placeholder="Иванов" required>
+              <input class="form__introduction-field form__field form__field--surname" id="user-surname" type="text" name="surname" placeholder="Иванов" required>
             </div>
             <div class="form__introduction form__introduction--introduction">
               <label for="user-patronymic">Отчество:</label>
-              <input class="form__introduction-field form__field" id="user-patronymic" type="text" name="patronymic" placeholder="Александрович">
+              <input class="form__introduction-field form__field form__field--patronomic" id="user-patronymic" type="text" name="patronymic" placeholder="Александрович">
             </div>
 
           </fieldset>
@@ -161,7 +161,7 @@
 
           <fieldset class="form__unit form__unit--emotion">
             <legend class="form__title form__title--emotion">Опишите свои эмоции:</legend>
-            <textarea class="form__text-field" name="comment" id="user-emotion" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="form__text-field" name="comment" id="user-emotion" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="form__button-wrapper">
               <input type="submit" class="form__button button" value="Отправить отзыв">
               <div class="form__coment">* — обязательные поля</div>

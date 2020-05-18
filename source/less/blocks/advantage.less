@@ -13,6 +13,8 @@
 }
 
 .advantage__point {
+  // display: flex;
+  // flex-wrap: wrap;
   padding-left: 69px;
   padding-bottom: 38px;
   margin: auto;
@@ -64,9 +66,11 @@
   background-position: top;
   background-repeat: no-repeat;
   padding-top: 77px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
-.advantage__img {
+.advantage__image {
   background-size: cover;
   background-repeat: no-repeat;
   height: 262px;
@@ -102,7 +106,6 @@
   .advantage__wraper {
     display: flex;
     align-content: stretch;
-    // height: 256px;
   }
 
   .advantage__item--city {
@@ -110,9 +113,12 @@
   }
 
   .advantage__description {
-    flex-grow: 1;
-    flex-basis: 33%;
     padding-bottom: 41px;
+
+    &--bridge,
+    &--city {
+      width: 256px;
+    }
 
     &--road,
     &--area,
@@ -146,14 +152,13 @@
   }
 
   .advantage__point {
-    display: flex;
     justify-content: space-between;
     padding: 52px 46px 62px 45px;
     max-width: 100%;
     flex-wrap: wrap;
   }
 
-  .advantage__img {
+  .advantage__image {
     height: 256px;
     flex-grow: 2;
     flex-basis: 66%;
@@ -194,12 +199,21 @@
   .advantage__break {
     display: block;
   }
+
+  .advantage__tourist-break {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .advantage__description {
     padding-top: 52px;
     padding-bottom: 53px;
+
+    &--bridge,
+    &--city {
+      width: 400px;
+    }
 
     &--city {
       padding-right: 35px;
@@ -240,5 +254,9 @@
       flex-basis: 33%;
       flex-grow: 1;
     }
+  }
+
+  .advantage__img {
+    min-width: 800px;
   }
 }

@@ -27,6 +27,10 @@
   & input {
     border: none;
     flex-grow: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 21px;
   }
 
   &:last-child {
@@ -78,14 +82,16 @@
 }
 
 .form__title {
-  padding-top: 14px;
+  padding: 14px 10px 6px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 6px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin: auto;
+
+  &--emotion {
+    display: block;
+  }
 }
 
 .form__introduction {
@@ -114,12 +120,24 @@
   box-sizing: border-box;
 
   &::placeholder {
-    padding-left: 21px;
+    // padding-left: 21px;
     color: black;
     opacity: 1;
     font-size: 18px;
     font-weight: bold;
     align-items: center;
+  }
+
+  &--name {
+    width: 230px;
+  }
+
+  &--surname {
+    width: 191px;
+  }
+
+  &--patronomic {
+    width: 193px;
   }
 
   &:hover {
@@ -164,6 +182,11 @@
     top: 21px;
     left: 22px;
   }
+}
+
+.form__contact-number,
+.form__contact-email {
+  width: 222px;
 }
 
 .form__input {
@@ -233,13 +256,19 @@
   padding: 16px 20px;
   background-color: #f2f2f2;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border: none;
   box-sizing: border-box;
   width: 100%;
+  color: black;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
 
   &::placeholder {
     color: black;
+    opacity: 1;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
@@ -255,15 +284,21 @@
 }
 
 .form__button {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
   margin: 0;
   display: inline-block;
   margin-top: 33px;
   border: none;
   text-transform: uppercase;
   width: 100%;
+}
+
+.form__button-wrapper .form__button {
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .form__break {
@@ -309,10 +344,12 @@
     line-height: 26px;
     padding-left: 0;
 
-    &--contact,
-    &--sight,
     &--emotion {
-      margin: auto;
+      position: absolute;
+      transform: translate(-50%, 0);
+      left: 50%;
+      top: -12px;
+      background: white;
     }
   }
 
@@ -333,12 +370,13 @@
       width: 50%;
       border-bottom: none;
       padding-bottom: 69px;
-      padding-left: 58px;
+      padding-left: 56px;
       padding-right: 0;
       box-sizing: border-box;
 
       & .form__title {
         text-align: start;
+        margin: 0;
       }
     }
 
@@ -368,6 +406,7 @@
 
       & .form__title {
         text-align: start;
+        margin: 0;
       }
     }
 
@@ -376,7 +415,7 @@
       flex-grow: 1;
       border-top: 1px solid #d6d6d6;
       border-bottom: none;
-      padding-bottom: 84px;
+      padding-bottom: 95px;
 
       & .form__title {
         padding: 0 63px;
@@ -388,9 +427,10 @@
       flex-grow: 1;
       border-top: 1px solid #d6d6d6;
       border-bottom: none;
+      position: relative;
 
       & .form__title {
-        padding: 0 63px;
+        padding: 0 36px;
       }
     }
   }
@@ -409,7 +449,6 @@
     padding-left: 0;
     width: auto;
     min-width: 324px;
-    padding-right: 11px;
   }
 
   .form__coment {
@@ -425,6 +464,10 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 22px;
+
+    & .form__button {
+      padding-right: 11px;
+    }
 
     & input {
       flex-grow: 0;
@@ -452,7 +495,7 @@
   }
 
   .form__text-field {
-    margin: 57px 0 27px;
+    margin: 70px 0 23px;
   }
 
   .form__unit--introduction > div:first-of-type {
@@ -464,6 +507,20 @@
 
     &:first-child {
       padding-top: 66px;
+    }
+  }
+
+  .form__field {
+    &--name {
+      width: 215px;
+    }
+
+    &--surname {
+      width: 178px;
+    }
+
+    &--patronomic {
+      width: 180px;
     }
   }
 }
@@ -525,6 +582,7 @@
     &--imprassion .form__title {
       padding-right: 45px;
       text-align: center;
+      margin: auto;
     }
 
     &--introduction {
@@ -537,7 +595,7 @@
     }
 
     &--sight {
-      padding-bottom: 83px;
+      padding-bottom: 92px;
     }
   }
 
@@ -567,5 +625,9 @@
 
   .form__impression {
     padding-left: 82px;
+  }
+
+  .form__button-wrapper .form__button {
+      padding-right: 0px;
   }
 }
