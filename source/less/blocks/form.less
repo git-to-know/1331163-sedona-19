@@ -88,10 +88,6 @@
   font-weight: bold;
   text-align: center;
   margin: auto;
-
-  &--emotion {
-    display: block;
-  }
 }
 
 .form__introduction {
@@ -120,7 +116,6 @@
   box-sizing: border-box;
 
   &::placeholder {
-    // padding-left: 21px;
     color: black;
     opacity: 1;
     font-size: 18px;
@@ -366,17 +361,27 @@
 
     &--introduction {
       order: 2;
-      // flex-grow: 2;
       width: 50%;
       border-bottom: none;
       padding-bottom: 69px;
       padding-left: 56px;
       padding-right: 0;
       box-sizing: border-box;
+      position: relative;
 
       & .form__title {
         text-align: start;
         margin: 0;
+      }
+
+      &::before {
+        content: "";
+        height: 291px;
+        width: 1px;
+        background: #d6d6d6;
+        position: absolute;
+        left: 0;
+        top: 22px;
       }
     }
 
@@ -628,6 +633,10 @@
   }
 
   .form__button-wrapper .form__button {
-      padding-right: 0px;
+    padding-right: 0;
+  }
+
+  .form__text-field {
+    margin-bottom: 25px;
   }
 }
