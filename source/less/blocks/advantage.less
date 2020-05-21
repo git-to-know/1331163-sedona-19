@@ -131,7 +131,7 @@
     }
 
     &--city {
-      padding: 45px 38px 0;
+      padding: 45px 38px 35px;
       background-image: none;
     }
 
@@ -158,9 +158,10 @@
   }
 
   .advantage__image {
-    height: 256px;
+    height: auto;
     flex-grow: 2;
     flex-basis: 66%;
+    align-items: stretch;
   }
 
   .advantage__point-list {
@@ -201,6 +202,15 @@
 
   .advantage__tourist-break {
     display: none;
+  }
+
+  .advantage__img {
+    &--city,
+    &--bridge {
+      height: 100%;
+      width: 100%;
+      margin-bottom: -4px;
+    }
   }
 }
 
@@ -257,5 +267,10 @@
 
   .advantage__img {
     min-width: 800px;
+
+    &--city,
+    &--bridge {
+      margin-bottom: -146px;
+    }
   }
 }

@@ -240,6 +240,10 @@
   &:active + label::after {
     opacity: 0.3;
   }
+
+  &:focus + label::before {
+    outline: 2px solid #dbbd83;
+  }
 }
 
 .form__sight-wrapper {
@@ -555,6 +559,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 25px;
 
     & label {
       padding-left: 0;
@@ -573,6 +578,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 74px;
+    flex-wrap: wrap;
   }
 
   .form__field {
@@ -596,7 +602,7 @@
     }
 
     &--contact {
-      padding-bottom: 53px;
+      padding-bottom: 28px;
     }
 
     &--sight {

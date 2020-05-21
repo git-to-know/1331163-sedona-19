@@ -43,7 +43,8 @@ body {
   background-color: white;
   text-transform: uppercase;
   color: black;
-  min-width: 320px;
+  max-width: 320px;
+  margin: auto;
 }
 
 a {
@@ -52,4 +53,16 @@ a {
 
 li {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    max-width: 1200px;
+  }
 }
